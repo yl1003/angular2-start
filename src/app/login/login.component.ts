@@ -50,8 +50,9 @@ export class LoginComponent implements OnInit {
  
 
   onSubmit(formValue) {
-    console.log('auth result is: ' + this.service.loginWithCredentials(formValue.login.username, formValue.login.password));
-    console.log(formValue);
+    console.log('auth result is: '
+     + this.service.loginWithCredentials(formValue.login.username, formValue.login.password));
+    
   }
 
 }
